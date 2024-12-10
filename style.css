@@ -1,0 +1,197 @@
+/* Generelle stiler */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+
+    /* Fargeovergang med en lett opasitetseffekt */
+    background: linear-gradient(rgb(63, 91, 104), rgb(0, 0, 0));
+    background-size:contain ;
+    background-attachment:scroll; /* Paralakseffekt: Bakgrunnen beveger seg ikke når du ruller siden */
+    background-position: center;
+
+    /* Justering for tekst på bakgrunn */
+    color: #fff; /* Hvit tekst for kontrast mot bakgrunnen */
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-top: 50px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Skaper skyggeeffekt på overskriftene */
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #006cdf;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin: 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+a:hover {
+    background-color: #0056b3;
+    transform: scale(1.1); /* Gjør knappen litt større ved hover for ekstra effekt */
+}
+
+.info {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #ddd; /* Lysere tekstfarge for info-delen */
+}
+
+/* Header stil */
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Container for innholdet */
+.container {
+    margin-top: 50px;
+    padding: 20px;
+    width: 800px;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(160, 212, 255, 0.26);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Game-container {
+    margin-top: 50px;
+    padding: 20px;
+    width: 500px;
+    max-width: 70%;
+    min-height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("/Eksamen/Nettside/Bilde.png");
+    background-size: cover;
+    background-position: center;
+    background-color: #00000085;
+    background-blend-mode: overlay;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+.Game-container:hover {
+    background-color: #0000003f;
+    transform: scale(1.005);
+}
+
+.Bruker-container {
+    margin-top: 50px;
+    padding: 20px;
+    width: 500px;
+    max-width: 70%;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("/Eksamen/Nettside/Skjermbilde\ 2024-12-10\ 233125.png");
+    background-size: cover;
+    background-position: center;
+    background-color: #00000085;
+    background-blend-mode: overlay;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+.Bruker-container:hover {
+    background-color: #0000003f;
+    transform: scale(1.005);
+}
+
+/* Footer stil */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Sekvensiell stil for lenker */
+h2 a {
+    text-decoration: unset;
+    background-color: unset;
+    padding: unset;
+    border-radius: unset;
+    margin-top: 20px;
+    font-size: unset;
+    transition: unset;
+    width: unset;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+ul li {
+    padding: 5px 0;
+}
+
+ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin: 0px;
+    transition: background-color 0.3s ease-in-out;
+    font-size: 20px;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+    transform: scale(1.05);
+}
+
+/* Responsiv design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 22px;
+    }
+
+    a {
+        padding: 12px 25px;
+        font-size: 16px;
+    }
+
+    .container {
+        margin-top: 30px;
+    }
+
+    header {
+        font-size: 22px;
+    }
+}

@@ -6,19 +6,32 @@
     <title>Last ned spill</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            text-align: center;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-        }
+            background-color: #a1a1a1;
+            color: #333;
 
-        .container {
-            margin-top: 50px;
+            /* Bakgrunnsbilde med paralakseffekt */
+            background-image: url('Bilde.png');
+            background-size: cover; /* Sørger for at bildet dekker hele bakgrunnen */
+            background-position: center;
+            background-repeat: no-repeat;
+
+            /* Fargeovergang med en lett opasitetseffekt */
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Bilde.png");
+            background-size: cover;
+            background-attachment: fixed; /* Paralakseffekt: Bakgrunnen beveger seg ikke når du ruller siden */
+            background-position: center;
+
+            /* Justering for tekst på bakgrunn */
+            color: #fff; /* Hvit tekst for kontrast mot bakgrunnen */
         }
 
         h1 {
-            color: #333;
+            font-size: 2.5rem;
+            margin-top: 50px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Skaper skyggeeffekt på overskriftene */
         }
 
         a {
@@ -26,27 +39,123 @@
             text-decoration: none;
             color: #fff;
             background-color: #007bff;
-            padding: 10px 20px;
-            border-radius: 5px;
+            padding: 15px 20px;
+            border-radius: 10px;
+            margin: 20px;
             font-size: 16px;
+            transition: background-color 0.3s ease-in-out;
         }
 
         a:hover {
             background-color: #0056b3;
+            transform: scale(1.1); /* Gjør knappen litt større ved hover for ekstra effekt */
         }
 
         .info {
             margin-top: 20px;
             font-size: 14px;
-            color: #666;
+            color: #ddd; /* Lysere tekstfarge for info-delen */
         }
+
+        /* Header stil */
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        /* Container for innholdet */
+        .container {
+            margin-top: 50px;
+            padding: 20px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: rgba(160, 212, 255, 0.26);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Footer stil */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .info {
+            font-size: 16px;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        /* Responsiv design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 22px;
+            }
+
+            a {
+                padding: 12px 25px;
+                font-size: 16px;
+            }
+
+            .container {
+                margin-top: 30px;
+            }
+
+            header {
+                font-size: 22px;
+            }
+        }
+        
+
     </style>
 </head>
 <body>
+
+    <!-- Header -->
+    <header>
+        Last ned spill og brukerveiledning
+    </header>
+
+    <!-- Første Container: Last ned spill -->
     <div class="container">
-        <h1>Last ned spillet ditt!</h1>
-        <a href="spill.exe" download>Last ned spill</a>
-        <p class="info">Klikk på knappen for å laste ned spillet som en zip-fil.</p>
+        <h1>Last ned spillet</h1>
+        <div class="btn-container">
+            <a href="spill.exe" download>Last ned spill</a>
+            <p class="info">Klikk på knappen for å laste ned spillet</p>
+        </div>
     </div>
+
+    <!-- Andre Container: Last ned brukerveiledning -->
+    <div class="container">
+        <h1>Last ned brukerveiledning</h1>
+        <div class="btn-container">
+            <a href="brukerveiledning.pdf" download>Last ned brukerveiledning</a>
+            <p class="info">Klikk på knappen for å laste ned brukerveiledningen</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 Spill Utvikling. Alle rettigheter forbeholdt.
+    </footer>
+
 </body>
 </html>

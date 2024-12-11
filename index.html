@@ -3,20 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tittel på nett siden -->
     <title>Touch Ball</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Header -->
+    <!-- Header, altså toppen av nett siden hvor du kan bytte bellom sider -->
     <header>
+        <!-- Setter Brukerveiledning som en link for å ta deg til siden -->
         Touch Ball<a style="font-size: 18px;display: inline-block;" href="BrukerVeiledning.html" >Brukerveiledning</a>
     </header>
 
-    <!-- Første Container: Last ned spill -->
+    <!-- Her har vi en divisjon for å laste ned spillet, 
+        den brukes også til å sette den fine bakkgrunden og alle efektene -->
     <div class="Game-container">
+        <!-- Litt tekst i toppen for å få folk til å ville laste ned spillet -->
         <h1>Last ned Touch Ball</h1>
         <h2 style="color: rgb(255, 50,0); font-size: 30px;">Helt GRATIS</h2>
+        <!-- Legger til to knapper den ene tar deg til github nettsiden,
+            den andre laster ned spillet som en exe.-->
         <div class="btn-container">
             <a href="spill.exe" download>Last ned spill</a>
             <a href="https://github.com/LukasBerg0707/EksamenSide/tree/f0ebdf9443211b0f4ff1dd00c4737d6ac17a5ebd" download>GitHub folder</a>
@@ -24,7 +30,8 @@
         <p class="info">Klikk på knappen for å laste ned spillet</p>
     </div>
 
-    <!-- Andre Container: Last ned brukerveiledning -->
+    <!-- Her er det mye av det samme for å laste ned brukerveiledning,
+        men det er en ny klasse siden det skal være et annet bilde-->
     <div class="Bruker-container">
         <h1>Last ned Brukerveiledning</h1>
         <div class="btn-container">
@@ -34,7 +41,7 @@
         </div>
     </div>
     <br><br><br><br>
-    <!-- Footer -->
+    <!-- Footer er den lile delen på bunnen der det står hvem som har laget den og sånt. -->
     <footer>
         <p>&copy; 2024 Spill Utvikling. Laget av: Lukas Berg</p>
     </footer>

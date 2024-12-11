@@ -75,7 +75,7 @@ header {
     align-items: center;
 }
 
-.Game-container {
+.Bilde-container {
     margin-top: 50px;
     padding: 20px;
     width: 500px;
@@ -93,30 +93,7 @@ header {
     text-align: center;
     transition: 0.3s ease-in-out;
 }
-.Game-container:hover {
-    background-color: #0000003f;
-    transform: scale(1.005);
-}
-
-.Bruker-container {
-    margin-top: 50px;
-    padding: 20px;
-    width: 500px;
-    max-width: 70%;
-    height: 400px;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: url("BrukerVeiledningBilde.png");
-    background-size: cover;
-    background-position: center;
-    background-color: #00000085;
-    background-blend-mode: overlay;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    border-radius: 8px;
-    text-align: center;
-    transition: 0.3s ease-in-out;
-}
-.Bruker-container:hover {
+.Bilde-container:hover {
     background-color: #0000003f;
     transform: scale(1.005);
 }

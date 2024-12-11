@@ -8,20 +8,20 @@ body {
     /* Fargeovergang med en lett opasitetseffekt */
     background: linear-gradient(rgb(63, 91, 104), rgb(0, 0, 0));
     background-size:contain ;
-    background-attachment:scroll; /* Paralakseffekt: Bakgrunnen beveger seg ikke når du ruller siden */
+    background-attachment:scroll; /* Bakgrunnen beveger seg når du ruller siden */
     background-position: center;
 
     /* Justering for tekst på bakgrunn */
     color: #fff; /* Hvit tekst for kontrast mot bakgrunnen */
 }
 
-h1 {
+h1 {/*Overskriftene*/
     font-size: 2.5rem;
     margin-top: 50px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Skaper skyggeeffekt på overskriftene */
 }
 
-a {
+a {/*Knappene og alle linker*/
     display: inline-block;
     text-decoration: none;
     color: #fff;
@@ -33,18 +33,18 @@ a {
     transition: background-color 0.3s ease-in-out;
 }
 
-a:hover {
+a:hover {/*Når du holder musen over knappene eller linker */
     background-color: #0056b3;
-    transform: scale(1.1); /* Gjør knappen litt større ved hover for ekstra effekt */
+    transform: scale(1.1);
 }
 
-.info {
+.info {/*De små tekstene med info under nedlastningene*/
     margin-top: 20px;
     font-size: 14px;
-    color: #ddd; /* Lysere tekstfarge for info-delen */
+    color: #ddd;
 }
 
-/* Header stil */
+/* Header/ Toppen av skjermen */
 header {
     background-color: #007bff;
     color: white;
@@ -54,7 +54,7 @@ header {
     font-weight: bold;
 }
 
-/* Container for innholdet */
+/* For generele conteienre, mest brukt i brukerveiledningen */
 .container {
     margin-top: 50px;
     padding: 20px;
@@ -68,14 +68,14 @@ header {
     text-align: center;
 }
 
-.btn-container {
+.btn-container {/*Knapper i en container*/
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
 
-.Bilde-container {
+.Bilde-container {/*Konteiner som skal ha bilde som bakgrund*/
     margin-top: 50px;
     padding: 20px;
     width: 500px;
@@ -92,13 +92,12 @@ header {
     text-align: center;
     transition: 0.3s ease-in-out;
 }
-.Bilde-container:hover {
+.Bilde-container:hover {/*Når du holder musen over bilde containeren*/
     background-color: #0000003f;
     transform: scale(1.005);
 }
 
-/* Footer stil */
-footer {
+footer {/*fotter altså den helt nede hvor det stpr hvem som har lagd det og rettigheter*/
     background-color: #333;
     color: white;
     padding: 10px;
@@ -108,13 +107,12 @@ footer {
     width: 100%;
 }
 
-footer p {
+footer p {/*Alle peragrafer i footeren*/
     margin: 0;
     font-size: 14px;
 }
 
-/* Sekvensiell stil for lenker */
-h2 a {
+h2 a {/*alle linker i h2*/
     text-decoration: unset;
     background-color: unset;
     padding: unset;
@@ -125,17 +123,17 @@ h2 a {
     width: unset;
 }
 
-ul {
+ul {/*Blir bukt til å oppevare lister*/
     list-style-type: none;
     padding: 0;
     text-align: center;
 }
 
-ul li {
+ul li {/*En liste del altså en av tingene som er i listen*/
     padding: 5px 0;
 }
 
-ul li a {
+ul li a {/*Linken/knappen i listen*/
     display: inline-block;
     text-decoration: none;
     color: #fff;
@@ -147,12 +145,12 @@ ul li a {
     font-size: 20px;
 }
 
-ul li a:hover {
+ul li a:hover {/*Når du holder musen over linken i listen*/
     text-decoration: underline;
     transform: scale(1.05);
 }
 
-/* Responsiv design */
+/* Responsiv design 
 @media (max-width: 768px) {
     h1 {
         font-size: 22px;
@@ -171,3 +169,4 @@ ul li a:hover {
         font-size: 22px;
     }
 }
+*/
